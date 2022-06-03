@@ -2,6 +2,8 @@ import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 import { colors } from "./tokens/colors";
 import { breakpoints, sizings } from "./tokens/space";
 import * as typographyTokens from "./tokens/typography";
+import { theme } from "./theme/index.css";
+import { dark } from "./theme/dark.css";
 
 const responsiveProperties = defineProperties({
   conditions: {
@@ -23,21 +25,19 @@ const responsiveProperties = defineProperties({
   properties: {
     display: ["flex"],
     flexDirection: ["row", "column"],
-    fontSize: typographyTokens.sizes,
+    fontSize: theme.fontSize,
   },
 });
 
 const colorProperties = defineProperties({
   conditions: {
-    light: {
-      "@media": "(prefers-color-scheme: light)",
-    },
-    dark: { "@media": "(prefers-color-scheme: dark)" },
+    light: {},
+    dark: { selector: `.${dark} &` },
   },
   defaultCondition: ["light", "dark"],
   properties: {
-    color: colors,
-    background: colors,
+    color: theme.colors.baseColors,
+    background: theme.colors.baseColors,
   },
 });
 
