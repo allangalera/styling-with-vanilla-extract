@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <title>Styling with Vanilla Extract</title>
       </Head>
       <Main>
-        <Text>Olá</Text>
+        <Text fontSize="xl">Olá</Text>
         <Text>Olá</Text>
       </Main>
     </>

@@ -1,5 +1,6 @@
 import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 import { breakpoints, sizings } from "./tokens/space";
+import * as typographyTokens from "./tokens/typography";
 
 const responsiveProperties = defineProperties({
   conditions: {
@@ -21,6 +22,7 @@ const responsiveProperties = defineProperties({
   properties: {
     display: ["flex"],
     flexDirection: ["row", "column"],
+    fontSize: typographyTokens.sizes,
   },
 });
 
