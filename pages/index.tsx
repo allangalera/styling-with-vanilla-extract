@@ -1,6 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import { Text } from '../components/Text'
+import type { NextPage } from "next";
+import Head from "next/head";
+import { Main } from "../components/Main";
+import { Text } from "../components/Text";
 
 const Home: NextPage = () => {
   return (
@@ -8,10 +9,12 @@ const Home: NextPage = () => {
       <Head>
         <title>Styling with Vanilla Extract</title>
       </Head>
-
-      <Text>Olá</Text>
+      <Main>
+        <Text>Olá</Text>
+        <Text>Olá</Text>
+      </Main>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

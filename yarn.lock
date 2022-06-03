@@ -502,6 +502,11 @@
   resolved "https://nexus.dc.ifood.com.br/repository/ifood-npm/@vanilla-extract/private/-/private-1.0.3.tgz#7ec72bc2ff6fe51f9d650f962e8d1989b073690f"
   integrity sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==
 
+"@vanilla-extract/sprinkles@^1.4.1":
+  version "1.4.1"
+  resolved "https://nexus.dc.ifood.com.br/repository/ifood-npm/@vanilla-extract/sprinkles/-/sprinkles-1.4.1.tgz#8c8703ddedaac355c1187db909119816c0fc771c"
+  integrity sha512-aW6CfMMToX4a+baLuVxwcT0FSACjX3xrNt8wdi/3LLRlLAfhyue8OK7kJxhcYNZfydBeWTP59aRy8p5FUTIeew==
+
 "@vanilla-extract/webpack-plugin@^2.1.7":
   version "2.1.10"
   resolved "https://nexus.dc.ifood.com.br/repository/ifood-npm/@vanilla-extract/webpack-plugin/-/webpack-plugin-2.1.10.tgz#5b41538dfe7ef0c69514d35bb1c56d8e7a5ed4c3"
