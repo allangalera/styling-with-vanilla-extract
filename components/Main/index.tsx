@@ -10,7 +10,14 @@ export const Main = ({ children }: MainProps) => {
     <main
       className={sprinkles({
         display: "flex",
-        flexDirection: "column",
+        flexDirection: {
+          sm: "row",
+          md: "column",
+        },
+        background: {
+          light: "gray1",
+          dark: "gray12",
+        },
       })}
     >
       {children}

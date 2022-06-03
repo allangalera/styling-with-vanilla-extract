@@ -1,4 +1,5 @@
 import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
+import { colors } from "./tokens/colors";
 import { breakpoints, sizings } from "./tokens/space";
 import * as typographyTokens from "./tokens/typography";
 
@@ -26,6 +27,20 @@ const responsiveProperties = defineProperties({
   },
 });
 
-export const sprinkles = createSprinkles(responsiveProperties);
+const colorProperties = defineProperties({
+  conditions: {
+    light: {
+      "@media": "(prefers-color-scheme: light)",
+    },
+    dark: { "@media": "(prefers-color-scheme: dark)" },
+  },
+  defaultCondition: ["light", "dark"],
+  properties: {
+    color: colors,
+    background: colors,
+  },
+});
+
+export const sprinkles = createSprinkles(responsiveProperties, colorProperties);
 
 export type Sprinkles = Parameters<typeof sprinkles>[0];
